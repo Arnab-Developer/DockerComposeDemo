@@ -1,0 +1,15 @@
+services:
+
+  api1:
+    build:
+      context: .
+      dockerfile: WebApi1/Dockerfile
+    ports:
+      - "81:80"
+
+  api2:
+    build:
+      context: .
+      dockerfile: WebApi2/Dockerfile
+    ports:
+      - "82:80"

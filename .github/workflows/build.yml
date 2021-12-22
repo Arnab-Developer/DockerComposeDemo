@@ -27,3 +27,6 @@ jobs:
 
     - name: Publish WebApi2
       run: dotnet publish WebApi2/WebApi2.csproj --configuration Release -o WebApi2/bin/publish/
+
+    - name: Compose up
+      run: docker compose up

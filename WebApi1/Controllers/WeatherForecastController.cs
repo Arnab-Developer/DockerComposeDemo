@@ -12,7 +12,7 @@ public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
     {
-        "Api1 Freezing", "Api1 Bracing"//, "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        "Api1 Freezing", "Api1 Bracing"
     };
 
     private readonly ILogger<WeatherForecastController> _logger;

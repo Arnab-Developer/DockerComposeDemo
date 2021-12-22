@@ -21,3 +21,9 @@ jobs:
         
     - name: Build
       run: dotnet build --configuration Release
+
+    - name: Publish WebApi1
+      run: dotnet publish WebApi1/WebApi1.csproj --configuration Release -o WebApi1/bin/publish/
+
+    - name: Publish WebApi2
+      run: dotnet publish WebApi2/WebApi2.csproj --configuration Release -o WebApi2/bin/publish/

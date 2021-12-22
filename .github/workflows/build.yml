@@ -25,8 +25,11 @@ jobs:
     - name: Publish WebApi1
       run: dotnet publish WebApi1/WebApi1.csproj --configuration Release -o WebApi1/bin/publish/
 
+    - name: Docker build WebApi1
+      run: docker build -f WebApi1/Dockerfile -t webapi1:1.0.0 .
+
     - name: Publish WebApi2
       run: dotnet publish WebApi2/WebApi2.csproj --configuration Release -o WebApi2/bin/publish/
 
-    - name: Compose up
-      run: docker compose up
+    - name: Docker build WebApi2
+      run: docker build -f WebApi2/Dockerfile -t webapi2:1.0.0 .

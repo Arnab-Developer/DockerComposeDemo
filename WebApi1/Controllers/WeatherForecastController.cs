@@ -11,13 +11,6 @@ public class WeatherForecastController : ControllerBase
         "Api1 Freezing", "Api1 Bracing"
     };
 
-    private readonly ILogger<WeatherForecastController> _logger;
-
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
-    {
-        _logger = logger;
-    }
-
     [HttpGet]
     public IEnumerable<WeatherForecast> Get()
     {

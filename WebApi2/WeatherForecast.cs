@@ -1,5 +1,3 @@
-using System;
-
 namespace WebApi2;
 
 public class WeatherForecast
